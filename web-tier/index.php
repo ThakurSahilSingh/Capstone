@@ -180,13 +180,13 @@ $users = json_decode($response, true);
     </div>
 
     <div class="container">
-        <h1>Add a Name</h1>
+        <h1>Write your Note Here</h1>
         <form method="post">
             <input type="text" name="name" required placeholder="Enter a name" />
             <input type="submit" value="Submit" />
         </form>
 
-        <h2>User List</h2>
+        <h2>Notes List</h2>
         <ul>
             <?php foreach ($users as $user): ?>
                 <li><?= htmlspecialchars($user['name']) ?></li>
