@@ -52,10 +52,10 @@ phases:
       - echo "Running SonarQube analysis..."
       - cd app-tier/
       - |
-        sonar-scanner -Dsonar.projectKey=Project \
+        sonar-scanner -Dsonar.projectKey=MyNotesApp \
                       -Dsonar.sources=. \
-                      -Dsonar.host.url=http://3.81.33.149 \
-                      -Dsonar.login=sqp_03cfcd28b35649e574d6f6b0c8f1bc7575bfc7dd || echo "SonarQube scan failed, continuing..."
+                      -Dsonar.host.url=http://98.83.143.169 \
+                      -Dsonar.login=sqp_991ed6cbef2b65612ade3b362f0c97ab6b4bb0dc || echo "SonarQube scan failed, continuing..."
       - cd -
 
       - echo "Updating DB Host Endpoint..."
