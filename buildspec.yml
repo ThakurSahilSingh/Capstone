@@ -3,9 +3,9 @@ version: 0.2
 env:
   variables:
     DB_USERNAME: admin
-    DB_PASSWORD: adminadmin
+    DB_PASSWORD: Admin123123
     AWS_REGION: us-east-1
-    AWS_ACCOUNT_ID: 047719630685
+    AWS_ACCOUNT_ID: 137068239975
     BACKEND_IMAGE_REPO: backend
     FRONTEND_IMAGE_REPO: frontend
     DB_INSTANCE_ID: three-tier-mysql
@@ -36,7 +36,7 @@ phases:
       - echo "Image tag is $IMAGE_TAG"
 
       - echo "Logging in to Docker Hub..."
-      - echo "Pavanteja@12pavan" | docker login -u "pavanthumati" --password-stdin
+      - echo "Starsahil@2408" | docker login -u "sahil0824" --password-stdin
 
   pre_build:
     commands:
