@@ -43,7 +43,6 @@ phases:
 
   build:
     commands:
-      - cd -
       - echo "Updating DB Host Endpoint..."
       - sed -i "s|DBHOST|$RDS_ENDPOINT|g" app-tier/config.py
 
